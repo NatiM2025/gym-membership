@@ -1,4 +1,4 @@
-# Gym Membership
+# Gym com.pluralsight.Membership
 
 <!-- HOW TO USE THIS TEMPLATE
      Save it as README.md at the root of your project, next to pom.xml. Replace every comment like this one
