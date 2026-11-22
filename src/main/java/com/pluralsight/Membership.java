@@ -49,4 +49,14 @@ public class Membership {
                 ", baseRate=" + baseRate +
                 '}';
     }
+
+    public BigDecimal getSignUpFee() {
+
+        return new BigDecimal("49.00");
+    }
+
+    public BigDecimal getContractTotal() {
+        return getMonthlyPrice().multiply(new BigDecimal(months)).add(getSignUpFee());
+
+    }
 }

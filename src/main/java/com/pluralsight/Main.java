@@ -23,12 +23,18 @@ public class Main {
         System.out.println(grace.getMemberName() + ", " + grace.getMonths() + " months, $" + grace.getMonthlyPrice() + " per month");
         System.out.println(emma.getMemberName() + ", " + emma.getMonths() + " months, $" + emma.getMonthlyPrice() + " per month");
 
-        System.out.println("===== Guest passes =====");
+
+        System.out.println("--- Guest passes ---");
         carol.useGuestPass();
         carol.useGuestPass();
         carol.useGuestPass();
         frank.useGuestPass();
 
 
+        System.out.println("--- Sign-up fee and contract total ---");
+        System.out.println(henry.getMemberName() + ": fee $" + henry.getSignUpFee() + ", total $" + henry.getContractTotal());
+        System.out.println(carol.getMemberName() + ": fee $" + carol.getSignUpFee() + ", total $" + carol.getContractTotal());
+        System.out.println(frank.getMemberName() + ": fee $" + frank.getSignUpFee() + ", total $" + frank.getContractTotal());
+        System.out.println(grace.getMemberName() + ": fee $" + grace.getSignUpFee() + ", total $" + grace.getContractTotal());
     }
 }
