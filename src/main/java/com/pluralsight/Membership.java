@@ -43,11 +43,7 @@ public class Membership {
 
     @Override
     public String toString() {
-        return "Membership{" +
-                "Membership='" + memberName + '\'' +
-                ", months=" + months +
-                ", baseRate=" + baseRate +
-                '}';
+        return "Membership | " + memberName + " | " + months + " months";
     }
 
     public BigDecimal getSignUpFee() {
