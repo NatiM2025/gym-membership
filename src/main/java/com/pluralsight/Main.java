@@ -6,7 +6,8 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         System.out.println("===== Gym Memberships =====");
-        Membership henry = new Membership("Henry Clark", 3, new BigDecimal("30.00"));
+        // java: com.pluralsight.Membership is abstract; cannot be instantiated
+        // Membership henry = new Membership("Henry Clark", 3, new BigDecimal("30.00"));
         BasicMembership alice = new BasicMembership("Alice Johnson", 6, new BigDecimal("30.00"), true);
         BasicMembership bob = new BasicMembership("Bob Smith", 2, new BigDecimal("27.50"), false);
         PremiumMembership carol = new PremiumMembership("Carol White", 12, new BigDecimal("30.00"), 2);
@@ -15,7 +16,7 @@ public class Main {
         FamilyMembership emma = new FamilyMembership("Emma Wilson", 6, new BigDecimal("30.00"), 1);
 
         ArrayList<Membership> memberships = new ArrayList<>();
-        memberships.add(henry);
+        //memberships.add(henry);
         memberships.add(alice);
         memberships.add(bob);
         memberships.add(carol);

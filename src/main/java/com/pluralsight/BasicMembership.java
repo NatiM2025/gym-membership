@@ -24,7 +24,7 @@ public class BasicMembership extends Membership{
     public void setOffPeakOnly(boolean offPeakOnly) {
         this.offPeakOnly = offPeakOnly;
     }
-
+//java: com.pluralsight.BasicMembership is not abstract and does not override abstract method getMonthlyPrice() in com.pluralsight.Membership
     @Override
     public BigDecimal getMonthlyPrice() {
         if (offPeakOnly) {

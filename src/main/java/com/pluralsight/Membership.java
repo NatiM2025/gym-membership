@@ -2,7 +2,7 @@ package com.pluralsight;
 
 import java.math.BigDecimal;
 
-public class Membership {
+public abstract class Membership {
     private String memberName;
     private int months;
     private BigDecimal baseRate;
@@ -37,9 +37,7 @@ public class Membership {
         this.baseRate = baseRate;
     }
     // retuns monthly price
-    public BigDecimal getMonthlyPrice() {
-        return baseRate;
-    }
+    public abstract BigDecimal getMonthlyPrice();
 
     @Override
     public String toString() {
