@@ -51,6 +51,10 @@ public class Main {
                 System.out.println(family.getMemberName() + ": print " + (family.getExtraMembers() + 1) + " key cards");
             }
         }
+        System.out.println("--- Kinds ---");
+        for (Membership membership : memberships) {
+            System.out.println(membership.getMemberName() + ": " + membership.getClass().getSimpleName());
+        }
 
     }
 
