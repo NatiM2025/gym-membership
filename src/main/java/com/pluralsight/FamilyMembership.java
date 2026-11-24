@@ -14,6 +14,7 @@ public class FamilyMembership extends Membership{
         return extraMembers;
     }
 
+
     public void setExtraMembers(int extraMembers) {
         this.extraMembers = extraMembers;
     }
